@@ -1,0 +1,6 @@
+data/raw/*
+data/output/*
+__pycache__/
+.env
+.venv/
+*.db

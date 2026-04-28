@@ -1,0 +1,245 @@
+2026-04-27 20:01:04,175 [INFO] [SIFT] EXEC: colmap feature_extractor --database_path D:/Devon/portfolio/Headless-SfM-Engine/data/output/database.db --image_path D:/Devon/portfolio/Headless-SfM-Engine/data/raw --ImageReader.single_camera 1 --SiftExtraction.use_gpu 1
+2026-04-27 20:01:04,308 [ERROR] [SIFT] FAILED rc=1
+STDOUT:
+
+STDERR:
+E20260427 20:01:04.237993 19488 option_manager.cc:976] Failed to parse options - unrecognised option '--SiftExtraction.use_gpu'.
+
+2026-04-27 21:18:56,900 [INFO] [SIFT] EXEC: colmap feature_extractor --database_path D:/Devon/portfolio/Headless-SfM-Engine/data/output/database.db --image_path D:/Devon/portfolio/Headless-SfM-Engine/data/raw --ImageReader.single_camera 1 --SiftExtraction.use_gpu 1
+2026-04-27 21:18:57,016 [ERROR] [SIFT] FAILED rc=1
+STDOUT:
+
+STDERR:
+E20260427 21:18:56.955464 40536 base_option_manager.cc:264] Failed to parse options - unrecognised option '--SiftExtraction.use_gpu'.
+
+2026-04-27 21:23:14,230 [INFO] [SIFT] EXEC: colmap feature_extractor --database_path D:/Devon/portfolio/Headless-SfM-Engine/data/output/database.db --image_path D:/Devon/portfolio/Headless-SfM-Engine/data/raw --ImageReader.single_camera 1
+2026-04-27 21:23:18,117 [INFO] [SIFT] STDERR:
+I20260427 21:23:14.363772 30788 feature_extraction.cc:506] === Feature extraction ===
+I20260427 21:23:14.365632 37376 sift.cc:757] Creating SIFT GPU feature extractor
+I20260427 21:23:16.742025  6288 feature_extraction.cc:284] Processed file [1/18]
+I20260427 21:23:16.742120  6288 feature_extraction.cc:287]   Name:            DJI_0018.JPG
+I20260427 21:23:16.742138  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:16.742151  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:16.742169  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:16.742202  6288 feature_extraction.cc:306]   Features:        10210 (SIFT)
+I20260427 21:23:16.742291  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.995, ALT=198.309
+I20260427 21:23:16.742315  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:16.815419  6288 feature_extraction.cc:284] Processed file [2/18]
+I20260427 21:23:16.815497  6288 feature_extraction.cc:287]   Name:            DJI_0019.JPG
+I20260427 21:23:16.815517  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:16.815531  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:16.815546  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:16.815566  6288 feature_extraction.cc:306]   Features:        10493 (SIFT)
+I20260427 21:23:16.815655  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.994, ALT=198.609
+I20260427 21:23:16.815676  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:16.890305  6288 feature_extraction.cc:284] Processed file [3/18]
+I20260427 21:23:16.890385  6288 feature_extraction.cc:287]   Name:            DJI_0020.JPG
+I20260427 21:23:16.890411  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:16.890432  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:16.890460  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:16.890484  6288 feature_extraction.cc:306]   Features:        10856 (SIFT)
+I20260427 21:23:16.890592  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.994, ALT=198.609
+I20260427 21:23:16.890627  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:16.965221  6288 feature_extraction.cc:284] Processed file [4/18]
+I20260427 21:23:16.965304  6288 feature_extraction.cc:287]   Name:            DJI_0021.JPG
+I20260427 21:23:16.965332  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:16.965352  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:16.965374  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:16.965403  6288 feature_extraction.cc:306]   Features:        11441 (SIFT)
+I20260427 21:23:16.965496  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.994, ALT=198.609
+I20260427 21:23:16.965532  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.043159  6288 feature_extraction.cc:284] Processed file [5/18]
+I20260427 21:23:17.043254  6288 feature_extraction.cc:287]   Name:            DJI_0022.JPG
+I20260427 21:23:17.043281  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.043302  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.043323  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.043354  6288 feature_extraction.cc:306]   Features:        11301 (SIFT)
+I20260427 21:23:17.043444  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.994, ALT=198.509
+I20260427 21:23:17.043509  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.117957  6288 feature_extraction.cc:284] Processed file [6/18]
+I20260427 21:23:17.118069  6288 feature_extraction.cc:287]   Name:            DJI_0023.JPG
+I20260427 21:23:17.118101  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.118619  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.118650  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.118668  6288 feature_extraction.cc:306]   Features:        10934 (SIFT)
+I20260427 21:23:17.118747  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.994, ALT=198.509
+I20260427 21:23:17.118764  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.190793  6288 feature_extraction.cc:284] Processed file [7/18]
+I20260427 21:23:17.190865  6288 feature_extraction.cc:287]   Name:            DJI_0024.JPG
+I20260427 21:23:17.190889  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.190907  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.190930  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.190955  6288 feature_extraction.cc:306]   Features:        8652 (SIFT)
+I20260427 21:23:17.191039  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.994, ALT=198.409
+I20260427 21:23:17.191071  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.261430  6288 feature_extraction.cc:284] Processed file [8/18]
+I20260427 21:23:17.261510  6288 feature_extraction.cc:287]   Name:            DJI_0025.JPG
+I20260427 21:23:17.261540  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.261560  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.261580  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.261611  6288 feature_extraction.cc:306]   Features:        8287 (SIFT)
+I20260427 21:23:17.261700  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.994, ALT=198.509
+I20260427 21:23:17.261741  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.331643  6288 feature_extraction.cc:284] Processed file [9/18]
+I20260427 21:23:17.331716  6288 feature_extraction.cc:287]   Name:            DJI_0026.JPG
+I20260427 21:23:17.331741  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.331762  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.331788  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.331811  6288 feature_extraction.cc:306]   Features:        8567 (SIFT)
+I20260427 21:23:17.331904  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.994, ALT=198.609
+I20260427 21:23:17.331937  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.400648  6288 feature_extraction.cc:284] Processed file [10/18]
+I20260427 21:23:17.400767  6288 feature_extraction.cc:287]   Name:            DJI_0027.JPG
+I20260427 21:23:17.400808  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.400835  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.400854  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.400877  6288 feature_extraction.cc:306]   Features:        8315 (SIFT)
+I20260427 21:23:17.400960  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.994, ALT=198.509
+I20260427 21:23:17.400991  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.473688  6288 feature_extraction.cc:284] Processed file [11/18]
+I20260427 21:23:17.473746  6288 feature_extraction.cc:287]   Name:            DJI_0028.JPG
+I20260427 21:23:17.473758  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.473767  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.473776  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.473789  6288 feature_extraction.cc:306]   Features:        11759 (SIFT)
+I20260427 21:23:17.473930  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.994, ALT=198.609
+I20260427 21:23:17.473946  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.548764  6288 feature_extraction.cc:284] Processed file [12/18]
+I20260427 21:23:17.548819  6288 feature_extraction.cc:287]   Name:            DJI_0029.JPG
+I20260427 21:23:17.548831  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.548841  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.548852  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.548864  6288 feature_extraction.cc:306]   Features:        11006 (SIFT)
+I20260427 21:23:17.548930  6288 feature_extraction.cc:320]   GPS:             LAT=46.842, LON=-91.994, ALT=198.609
+I20260427 21:23:17.548954  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.616999  6288 feature_extraction.cc:284] Processed file [13/18]
+I20260427 21:23:17.617054  6288 feature_extraction.cc:287]   Name:            DJI_0030.JPG
+I20260427 21:23:17.617065  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.617073  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.617085  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.617096  6288 feature_extraction.cc:306]   Features:        10595 (SIFT)
+I20260427 21:23:17.617163  6288 feature_extraction.cc:320]   GPS:             LAT=46.842, LON=-91.994, ALT=198.609
+I20260427 21:23:17.617178  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.688509  6288 feature_extraction.cc:284] Processed file [14/18]
+I20260427 21:23:17.688573  6288 feature_extraction.cc:287]   Name:            DJI_0031.JPG
+I20260427 21:23:17.688589  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.688602  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.688613  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.688626  6288 feature_extraction.cc:306]   Features:        9855 (SIFT)
+I20260427 21:23:17.688689  6288 feature_extraction.cc:320]   GPS:             LAT=46.842, LON=-91.994, ALT=198.709
+I20260427 21:23:17.688719  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.758278  6288 feature_extraction.cc:284] Processed file [15/18]
+I20260427 21:23:17.758358  6288 feature_extraction.cc:287]   Name:            DJI_0032.JPG
+I20260427 21:23:17.758398  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.758411  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.758426  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.758438  6288 feature_extraction.cc:306]   Features:        8771 (SIFT)
+I20260427 21:23:17.758503  6288 feature_extraction.cc:320]   GPS:             LAT=46.842, LON=-91.994, ALT=198.609
+I20260427 21:23:17.758526  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.826644  6288 feature_extraction.cc:284] Processed file [16/18]
+I20260427 21:23:17.826697  6288 feature_extraction.cc:287]   Name:            DJI_0033.JPG
+I20260427 21:23:17.826708  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.826713  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.826720  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.826728  6288 feature_extraction.cc:306]   Features:        8651 (SIFT)
+I20260427 21:23:17.826783  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.994, ALT=198.609
+I20260427 21:23:17.826807  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.899550  6288 feature_extraction.cc:284] Processed file [17/18]
+I20260427 21:23:17.899617  6288 feature_extraction.cc:287]   Name:            DJI_0034.JPG
+I20260427 21:23:17.899632  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.899643  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.899655  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.899669  6288 feature_extraction.cc:306]   Features:        12140 (SIFT)
+I20260427 21:23:17.899724  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.994, ALT=198.509
+I20260427 21:23:17.899739  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:17.971855  6288 feature_extraction.cc:284] Processed file [18/18]
+I20260427 21:23:17.971904  6288 feature_extraction.cc:287]   Name:            DJI_0035.JPG
+I20260427 21:23:17.971913  6288 feature_extraction.cc:296]   Dimensions:      4000 x 2250
+I20260427 21:23:17.971918  6288 feature_extraction.cc:299]   Camera:          #1 - SIMPLE_RADIAL
+I20260427 21:23:17.971928  6288 feature_extraction.cc:302]   Focal Length:    2121.28px (Prior)
+I20260427 21:23:17.971936  6288 feature_extraction.cc:306]   Features:        12355 (SIFT)
+I20260427 21:23:17.972011  6288 feature_extraction.cc:320]   GPS:             LAT=46.843, LON=-91.993, ALT=198.509
+I20260427 21:23:17.972033  6288 feature_extraction.cc:327]   Gravity:         X=0.000, Y=1.000, Z=0.000
+I20260427 21:23:18.004256 30788 timer.cc:90] Elapsed time: 0.061 [minutes]
+
+2026-04-27 21:23:18,117 [INFO] [MATCH] EXEC: colmap exhaustive_matcher --database_path D:/Devon/portfolio/Headless-SfM-Engine/data/output/database.db
+2026-04-27 21:23:19,843 [INFO] [MATCH] STDERR:
+I20260427 21:23:18.185614 30696 feature_matching.cc:195] === Feature matching & geometric verification ===
+I20260427 21:23:18.231993 41272 feature_matching_utils.cc:80] Bind FeatureMatcherWorker to GPU device 0
+I20260427 21:23:18.232212 41272 sift.cc:1559] Creating SIFT GPU feature matcher
+I20260427 21:23:18.234299 30696 pairing.cc:180] Generating exhaustive image pairs...
+I20260427 21:23:18.234341 30696 pairing.cc:213] Processing block [1/1, 1/1]
+I20260427 21:23:19.742649 30696 feature_matching.cc:217] in 1.508s
+I20260427 21:23:19.742708 30696 timer.cc:90] Elapsed time: 0.026 [minutes]
+
+2026-04-27 21:23:19,843 [INFO] [MAPPER] EXEC: colmap mapper --database_path D:/Devon/portfolio/Headless-SfM-Engine/data/output/database.db --image_path D:/Devon/portfolio/Headless-SfM-Engine/data/raw --output_path D:/Devon/portfolio/Headless-SfM-Engine/data/output/sparse
+2026-04-27 21:23:26,268 [INFO] [MAPPER] STDERR:
+I20260427 21:23:19.897441 41852 incremental_pipeline.cc:265] Loading database
+I20260427 21:23:19.897996 41852 database_cache.cc:72] Loading rigs...
+I20260427 21:23:19.898052 41852 database_cache.cc:82]  1 in 0.000s
+I20260427 21:23:19.898065 41852 database_cache.cc:90] Loading cameras...
+I20260427 21:23:19.898087 41852 database_cache.cc:108]  1 in 0.000s
+I20260427 21:23:19.898097 41852 database_cache.cc:116] Loading frames...
+I20260427 21:23:19.898151 41852 database_cache.cc:126]  18 in 0.000s
+I20260427 21:23:19.898161 41852 database_cache.cc:134] Loading matches...
+I20260427 21:23:19.898801 41852 database_cache.cc:139]  98 in 0.001s
+I20260427 21:23:19.898822 41852 database_cache.cc:147] Loading images...
+I20260427 21:23:19.904608 41852 database_cache.cc:241]  18 in 0.006s (connected 18, loaded 18)
+I20260427 21:23:19.904635 41852 database_cache.cc:255] Loading pose priors...
+I20260427 21:23:19.904663 41852 database_cache.cc:263]  18 in 0.000s
+I20260427 21:23:19.904670 41852 database_cache.cc:271] Building correspondence graph...
+I20260427 21:23:19.911129 41852 database_cache.cc:300]  in 0.006s (ignored 0)
+I20260427 21:23:19.911160 41852 timer.cc:90] Elapsed time: 0.000 [minutes]
+I20260427 21:23:19.912569 41852 incremental_pipeline.cc:377] Finding good initial image pair
+I20260427 21:23:19.933992 41852 incremental_pipeline.cc:401] Registering initial image pair #17 and #18
+I20260427 21:23:19.938129 41852 incremental_pipeline.cc:419] Global bundle adjustment
+I20260427 21:23:20.125885 41852 incremental_pipeline.cc:524] Registering image #7 (num_reg_frames=2)
+I20260427 21:23:20.125927 41852 incremental_pipeline.cc:527] => Image sees 621 / 1855 points
+I20260427 21:23:20.267168 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:20.413540 41852 incremental_pipeline.cc:524] Registering image #8 (num_reg_frames=3)
+I20260427 21:23:20.413585 41852 incremental_pipeline.cc:527] => Image sees 713 / 2637 points
+I20260427 21:23:20.610648 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:20.700367 41852 incremental_pipeline.cc:524] Registering image #16 (num_reg_frames=4)
+I20260427 21:23:20.700422 41852 incremental_pipeline.cc:527] => Image sees 1129 / 2676 points
+I20260427 21:23:20.943117 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:21.061024 41852 incremental_pipeline.cc:524] Registering image #9 (num_reg_frames=5)
+I20260427 21:23:21.061069 41852 incremental_pipeline.cc:527] => Image sees 991 / 2471 points
+I20260427 21:23:21.316589 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:21.447678 41852 incremental_pipeline.cc:524] Registering image #15 (num_reg_frames=6)
+I20260427 21:23:21.447723 41852 incremental_pipeline.cc:527] => Image sees 927 / 2143 points
+I20260427 21:23:21.605574 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:21.765645 41852 incremental_pipeline.cc:524] Registering image #10 (num_reg_frames=7)
+I20260427 21:23:21.765700 41852 incremental_pipeline.cc:527] => Image sees 738 / 2207 points
+I20260427 21:23:21.912817 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:22.172212 41852 incremental_pipeline.cc:524] Registering image #14 (num_reg_frames=8)
+I20260427 21:23:22.172264 41852 incremental_pipeline.cc:527] => Image sees 717 / 2760 points
+I20260427 21:23:22.283373 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:22.624857 41852 incremental_pipeline.cc:524] Registering image #11 (num_reg_frames=9)
+I20260427 21:23:22.624902 41852 incremental_pipeline.cc:527] => Image sees 668 / 2649 points
+I20260427 21:23:22.751302 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:23.007913 41852 incremental_pipeline.cc:524] Registering image #13 (num_reg_frames=10)
+I20260427 21:23:23.007963 41852 incremental_pipeline.cc:527] => Image sees 544 / 2099 points
+I20260427 21:23:23.151227 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:23.564506 41852 incremental_pipeline.cc:524] Registering image #12 (num_reg_frames=11)
+I20260427 21:23:23.564556 41852 incremental_pipeline.cc:527] => Image sees 743 / 2166 points
+I20260427 21:23:23.703256 41852 incremental_pipeline.cc:524] Registering image #6 (num_reg_frames=12)
+I20260427 21:23:23.703307 41852 incremental_pipeline.cc:527] => Image sees 568 / 845 points
+I20260427 21:23:23.804366 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:24.095419 41852 incremental_pipeline.cc:524] Registering image #5 (num_reg_frames=13)
+I20260427 21:23:24.095476 41852 incremental_pipeline.cc:527] => Image sees 624 / 853 points
+I20260427 21:23:24.289986 41852 incremental_pipeline.cc:524] Registering image #3 (num_reg_frames=14)
+I20260427 21:23:24.290038 41852 incremental_pipeline.cc:527] => Image sees 495 / 862 points
+I20260427 21:23:24.419946 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:24.844940 41852 incremental_pipeline.cc:524] Registering image #2 (num_reg_frames=15)
+I20260427 21:23:24.844988 41852 incremental_pipeline.cc:527] => Image sees 441 / 818 points
+I20260427 21:23:24.995412 41852 incremental_pipeline.cc:524] Registering image #4 (num_reg_frames=16)
+I20260427 21:23:24.995464 41852 incremental_pipeline.cc:527] => Image sees 633 / 815 points
+I20260427 21:23:25.128890 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:25.535890 41852 incremental_pipeline.cc:524] Registering image #1 (num_reg_frames=17)
+I20260427 21:23:25.535938 41852 incremental_pipeline.cc:527] => Image sees 359 / 624 points
+I20260427 21:23:25.644558 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:25.895108 41852 incremental_pipeline.cc:78] Retriangulation and Global bundle adjustment
+I20260427 21:23:26.177717 41852 incremental_pipeline.cc:710] Keeping successful reconstruction
+I20260427 21:23:26.201572 41852 timer.cc:90] Elapsed time: 0.105 [minutes]
+
+2026-04-27 21:23:26,268 [INFO] [CONVERT] EXEC: colmap model_converter --input_path D:/Devon/portfolio/Headless-SfM-Engine/data/output/sparse/0 --output_path D:/Devon/portfolio/Headless-SfM-Engine/data/output/sparse/0 --output_type TXT
