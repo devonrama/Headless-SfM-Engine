@@ -4,6 +4,7 @@ import asyncio
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
+SUBPROCESS_TIMEOUT_SEC = int(os.getenv("HSE_SUBPROCESS_TIMEOUT", "1800"))
 
 
 class ColmapRunner:
@@ -23,14 +24,30 @@ class ColmapRunner:
         with open(self.log_path, "a", encoding="utf-8", errors="replace") as f:
             f.write(msg + "\n")
 
-    async def _exec(self, cmd: str, phase: str):
+    def _exec_sync(self, cmd: str, phase: str) -> int:
+        """Sync subprocess execution. Called via asyncio.to_thread from async context."""
+        import subprocess
         self._log(f"[{phase}] EXEC: {cmd}")
-        redirected = f'{cmd} >> "{self.log_path.as_posix()}" 2>&1'
-        proc = await asyncio.create_subprocess_shell(redirected)
-        await proc.wait()
-        if proc.returncode != 0:
-            self._log(f"[{phase}] FAILED rc={proc.returncode}")
-            raise RuntimeError(f"COLMAP {phase} failed rc={proc.returncode}")
+        with open(self.log_path, "a", encoding="utf-8", errors="replace") as logf:
+            try:
+                result = subprocess.run(
+                    cmd,
+                    shell=True,
+                    stdout=logf,
+                    stderr=subprocess.STDOUT,
+                    timeout=SUBPROCESS_TIMEOUT_SEC,
+                    check=False,
+                )
+                return result.returncode
+            except subprocess.TimeoutExpired:
+                self._log(f"[{phase}] TIMEOUT after {SUBPROCESS_TIMEOUT_SEC}s")
+                raise RuntimeError(f"COLMAP {phase} timeout")
+
+    async def _exec(self, cmd: str, phase: str):
+        rc = await asyncio.to_thread(self._exec_sync, cmd, phase)
+        if rc != 0:
+            self._log(f"[{phase}] FAILED rc={rc}")
+            raise RuntimeError(f"COLMAP {phase} failed rc={rc}")
 
     async def feature_extraction(self):
         cmd = (
@@ -75,7 +92,12 @@ class ColmapRunner:
 
 
 async def run_sfm_pipeline(task_id: str):
-    await ColmapRunner(task_id).run()
+    runner = ColmapRunner(task_id)
+    try:
+        await runner.run()
+    except Exception as e:
+        runner._log(f"FAILED: {type(e).__name__}: {e}")
+        raise
 
 
 if __name__ == "__main__":

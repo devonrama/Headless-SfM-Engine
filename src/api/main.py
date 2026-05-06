@@ -32,6 +32,7 @@ app.mount("/files", StaticFiles(directory=str(OUTPUT_DIR)), name="files")
 _RE_REGISTERED = re.compile(r"Registered\s+images\s*[:=]\s*(\d+)", re.IGNORECASE)
 _RE_POINTS = re.compile(r"\bPoints\s*[:=]\s*(\d+)", re.IGNORECASE)
 _IMG_EXTS = (".jpg", ".jpeg", ".png")
+MAX_UPLOAD_BYTES = int(os.getenv("HSE_MAX_UPLOAD_MB", "500")) * 1024 * 1024
 
 
 def _flatten_image_dir(root: Path):
@@ -88,15 +89,31 @@ async def reconstruct(
     raw_dir.mkdir(parents=True, exist_ok=True)
     zip_path = raw_dir / "_upload.zip"
 
+    total_bytes = 0
     async with aiofiles.open(zip_path, "wb") as f:
         while True:
             chunk = await file.read(1 << 20)
             if not chunk:
                 break
+            total_bytes += len(chunk)
+            if total_bytes > MAX_UPLOAD_BYTES:
+                await f.close()
+                zip_path.unlink(missing_ok=True)
+                shutil.rmtree(raw_dir, ignore_errors=True)
+                raise HTTPException(
+                    status_code=413,
+                    detail=f"Upload exceeds {MAX_UPLOAD_BYTES // (1024*1024)} MB limit",
+                )
             await f.write(chunk)
 
     try:
         with zipfile.ZipFile(zip_path) as z:
+            for member in z.namelist():
+                if member.startswith("/") or ".." in Path(member).parts:
+                    raise HTTPException(
+                        status_code=400,
+                        detail=f"Rejected unsafe zip entry: {member}",
+                    )
             z.extractall(raw_dir)
     except zipfile.BadZipFile:
         raise HTTPException(status_code=400, detail="Corrupt zip payload")

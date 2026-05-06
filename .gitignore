@@ -4,3 +4,9 @@ __pycache__/
 .env
 .venv/
 *.db
+*.pyc
+*.log
+.pytest_cache/
+tests/data/
+staged_inputs/
+docs/openapi.json
