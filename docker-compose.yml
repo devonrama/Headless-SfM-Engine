@@ -1,0 +1,25 @@
+services:
+  hse:
+    build: .
+    image: hse:latest
+    container_name: hse
+    ports:
+      - "8000:8000"
+    volumes:
+      # Persist outputs across container restarts
+      - ./data/raw:/app/data/raw
+      - ./data/output:/app/data/output
+    environment:
+      # Override defaults if needed
+      HSE_MAX_UPLOAD_MB: "500"
+      HSE_SUBPROCESS_TIMEOUT: "1800"
+      COLMAP_BIN: "colmap"
+    # Uncomment for GPU support (requires NVIDIA Container Toolkit)
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: all
+    #           capabilities: [gpu]
+    restart: unless-stopped
